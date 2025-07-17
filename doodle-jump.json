@@ -14,7 +14,7 @@
     "sizes": "512x512"
   }
   ],
-  "start_url": "/?utm_source=pwa",
+  "start_url": "/doodle-jump",
   "scope": "/",
   "background_color": "#0e0e0e",
   "theme_color": "#0e0e0e",
