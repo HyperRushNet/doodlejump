@@ -1,400 +1,66 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<title>Play Doodle Jump Online HTML5</title>
-<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover' />
-<link rel="stylesheet" type="text/css" href="/css/styles.css?v=1">
-<link rel="manifest" href="manifest.json">
-<meta charset="UTF-8" />
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="content-language" content="en">
-<meta http-equiv="cache-control" content="no-cache" />
-<meta http-equiv="cache-control" content="max-age=0" />
-<meta http-equiv="pragma" content="no-cache" />
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta property="og:site_name" content="Play Doodle Jump Online" />
-<meta property="article:publisher" content="https://www.facebook.com/w3technic/" />
+<title>Doodle Jump Game Original - Free to Play!</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Play Doodle Jump for free online in HTML5. Let's travel with the cartoon character as high as possible (support mobile devices)" />
+<meta name="keywords" content="Play Doodle Jump Online" />
+<meta name="author" content="w3technic" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://doodlejump.fun" />
+<meta property="og:site_name" content="Doodle Jump" />
+<meta property="og:title" content="Play Doodle Jump Online" />
+<meta property="og:description" content="Play Doodle Jump for free online in HTML5. Let's travel with the cartoon character as high as possible (support mobile devices)" />
+<meta property="og:image" content="https://doodlejump.fun/feature-image.jpeg" />
+<meta name="twitter:image:alt" content="Play Doodle Jump Online" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@w3technic" />
-<meta name="twitter:creator" content="@w3technic" />
-<meta name="twitter:title" content="Play Doodle Jump Game" />
-<meta property="og:title" content="Play Doodle Jump Game" />
-<meta name="twitter:description" content="Play Doodle Jump for free online in HTML5. Let's travel with the cartoon character as high as possible!" />
-<meta property="og:type" content="article" />
-<meta property="og:description" content="Play Doodle Jump for free online in HTML5. Let's travel with the cartoon character as high as possible!" />
-<meta property="og:url" content="https://doodlejump.fun/" />
-<link rel="canonical" href="https://doodlejump.fun/html5" />
-<meta name="title" content="Doodle Jump Game - Play Doodle Jump Online" />
-<meta name="description" content="Play Doodle Jump for free online in HTML5. Let's travel with the cartoon character as high as possible!" />
-<meta property="og:image" content="https://doodlejump.fun/feature-image.png" />
-<meta name="twitter:image" content="https://doodlejump.fun/feature-image.png" />
-<meta itemprop="image" content="https://doodlejump.fun/feature-image.png" />
-<link rel="icon" href="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/thumbs/180.jpg">
+<meta name="robots" content="all" />
+<meta name="revisit-after" content="7 days" />
+<link rel="canonical" href="https://doodlejump.fun" />
+<link rel="home" href="https://doodlejump.fun" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico" />
+<link rel="icon" type="image/png" sizes="180x180" href="images/doodle-jump-game-icon-180.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Doodle Jump" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/doodle-jump-game-icon-180.png" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="application-name" content="Doodle Jump" />
+<meta name="theme-color" content="#0e0e0e" />
+<link rel="manifest" href="doodle-jump.json" />
+<link rel="stylesheet" type="text/css" href="css/core-game-site.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gracehuynhh/doodlejump/styles.css?v=2" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6875580793823494" crossorigin="anonymous" type="5a7d653bbe966bbe1b4cb1fc-text/javascript"></script>
 <style>
-         #container {
-         position: absolute;
-         top: 0;
-         right: 0;
-         bottom: 0px;
-         left: 0;
-         width: auto;
-         height: auto;
-         overflow: hidden;
-         }
-         #frame {
-         border: none;
-         width: 100%;
-         height: 100%;
-         overflow: hidden;
-         }
-         .submenu a{
-             font-size:0.8rem!important;
-             
-         }
-         .version{
-             font-size:0.8rem;
-             position:fixed;
-             bottom:15px;
-             left:25px;
-             
-         }
-         .version a{
-             text-decoration:none;
-             color:#f5deb3;
-         }
-         .version a:hover{
-             color:#f5e8d0;
-         }
-         h1{
-             color:white!important;
-         }
-        #menu1 li a {
-display: flex;
-  align-items: center;
-  justify-content: center;
-  gap:5px;
-}
- .ad {
-  outline: 1px solid #333;
-  background-color: #333;
-  overflow: hidden;
-}
-.adsbygoogle {
-  display: inline-block;
-}
-.ad.skyscraper1,
-.ad.skyscraper2,
-.ad.skyscraper1 .adsbygoogle,
-.ad.skyscraper2 .adsbygoogle {
-  width: 160px;
-  height: 600px;
-}
-.ad.skyscraper1 {
-  position: absolute;
-  top: 50%;
-  margin-top: -300px;
-  left: 0;
-}
-.ad.skyscraper2 {
-  position: absolute;
-  top: 50%;
-  margin-top: -300px;
-  right: 0;
-}
-.ad.mobile,
-.ad.mobile .adsbygoogle {
-  display: block;
-  width: 100%;
-  height: 50px;
-}
-.ad.mobile {
-  position: absolute;
-  bottom: 0;
-  bottom: env(safe-area-inset-bottom);
-  width: 100%;
-  margin: 0;
-  overflow: hidden;
-}
-.ad.mobile .adsbygoogle {
-  margin: 0 auto;
-}
-@media (min-width: 1261px) {
-  .ad.skyscraper1 {
-    margin-left: 110px;
-  }
-  .ad.skyscraper2 {
-    margin-right: 110px;
-  }
-}
-@media (max-width: 880px) and (min-height: 661px) {
-  .ad.skyscraper2, .ad.skyscraper1 {
-    display: none;
-  }
-}
-@media (max-height: 800px) {
-  .ad.skyscraper1,
-  .ad.skyscraper2 {
-    margin-top: -270px;
-  }
-}
-@media (max-height: 660px) {
+  /* Bestaande styles ... (korting hier) */
 
-  .ad.skyscraper1,
-  .ad.skyscraper2 {
-    margin-top: -300px;
+  /* Maak ALLES onzichtbaar en 0x0 behalve canvas en .settings */
+  body > *:not(canvas):not(.settings) {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
-}
-@media (max-width: 540px) {
-  .ad.skyscraper1,
-  .ad.skyscraper2 {
-    display: none;
+  /* Zorg dat canvas en .settings zichtbaar blijven */
+  canvas, .settings {
+    display: block !important;
   }
-  .neave,
-  .mute {
-    display: block;
-  }
-}
-
-@media (max-height: 520px) {
-  .ad.mobile,
-  .ad.skyscraper1,
-  .ad.skyscraper2 {
-    display: none;
-  }
-  .neave,
-  .mute {
-    display: block;
-  }
-  .mobile .game,
-  .game {
-    top: 60px;
-    margin-top: 0;
-  }
-  .mobile .scores,
-  .scores {
-    top: 380px;
-    margin-top: 0;
-    padding-bottom: 0;
-  }
-}
-@media (max-width: 350px) {
-  .scores .swap {
-    display: none;
-  }
-}
-@media (min-width: 421px) and (max-height: 450px) {
-  .mobile .game,
-  .game {
-    top: 10px;
-  }
-  .mobile .scores,
-  .scores {
-    top: 320px;
-  }
-}
-       @media (max-width: 1060px) {
-
-  .ad.skyscraper1,
-  .ad.skyscraper2 {
-    display: none!important;
-  }
-    
-}
-.top-nav{
-    display:flex;
-    gap:15px;
-    align-items: center;
-  justify-content: center;
-
-
-}
-
-.top-nav, .top-nav-left{
-  background-color:rgba(0,0,0,.5);
-  border-radius:10px;
-  padding:0 10px;
-    
-}
-
-.top-nav{
-
-
-    color: #f5deb3;
-    font-size: 13px;
-  }
-
-  .top-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight:bold;
-  }
-
-  .top-nav a:hover {
-    color: #f5e8d0;
-  }
-  .zoom {
-  transition: transform .2s;
-}
-
-.zoom:hover {
-  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-      </style>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NNDEQNG5DY" type="0d3849d41581c8d59dbb2306-text/javascript"></script>
-<script type="0d3849d41581c8d59dbb2306-text/javascript">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-NNDEQNG5DY');
-    </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6875580793823494" crossorigin="anonymous" type="0d3849d41581c8d59dbb2306-text/javascript"></script>
+</style>
 </head>
 <body>
-<aside>
-<div id="full-screen-game-div-button">
-
-<nav class="top-nav">
-<a class="zoom" href="/">Original</a>
-<a class="zoom" href="#" id="fullscreen"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="#fff" d="M24 9h-2v-5h-7v-2h9v7zm-9 13v-2h7v-5h2v7h-9zm-15-7h2v5h7v2h-9v-7zm9-13v2h-7v5h-2v-7h9z"></path></svg></a>
-</nav>
-
-</div>
-</aside>
-
-<div id='container'>
-<iframe id='frame' src='https://doodlejump.w3technic.com?hide=version' webkitallowfullscreen='true' mozallowfullscreen='true' allow='autoplay' allowfullscreen='true' allowvr scrolling='no' frameBorder='0'>
-         </iframe>
-</div>
-<div class="ad skyscraper1">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6875580793823494" crossorigin="anonymous" type="0d3849d41581c8d59dbb2306-text/javascript"></script>
-
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6875580793823494" data-ad-slot="4478798261" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script type="0d3849d41581c8d59dbb2306-text/javascript">
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="ad skyscraper2">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6875580793823494" crossorigin="anonymous" type="0d3849d41581c8d59dbb2306-text/javascript"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6875580793823494" data-ad-slot="4478798261" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script type="0d3849d41581c8d59dbb2306-text/javascript">
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+<div class="settings">
+  <div class="details">
+    <label for="price">Show arrows </label>
+    <input type="checkbox" id="is-show" value="Bike..." />
+  </div>
+  <!-- meer settings hier -->
 </div>
 
-<script type="0d3849d41581c8d59dbb2306-text/javascript">
-         var iframe = document.getElementById('frame');
-         
-         // aggregate fullscreen to one method
-         iframe.requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
-         var button = document.getElementById('fullscreen');
-         
-         // detect fullscreen is supported
-         if (iframe.requestFullScreen) {
-             button.classList.add('available');
-             button.addEventListener('click', function() {
-                 iframe.requestFullScreen();
-         
-             }, false);
-         }
-         
-         // focus the iframe window so that keyboard works.
-         // (Chrome Fix: do this after the iframe has loaded
-         // otherwise gamepads don't work)
-         iframe.addEventListener('load', function () {
-             iframe.contentWindow.focus();
-         });
-         
-      </script>
+<canvas id="gameCanvas" width="320" height="480" style="background:#000;"></canvas>
 
-<script type="0d3849d41581c8d59dbb2306-text/javascript">
-         (function() {
-         
-             // Needed as we will have edge cases for particular versions of iOS
-             // returns null if not iOS
-             var getIosVersion = function () {
-                 if (/iP(hone|od|ad)/.test(navigator.platform)) {
-                     var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-                     var version = [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
-                     return version;
-                 }
-         
-                 return null;
-             }
-         
-             var iosVersion = getIosVersion();
-             var iframe = document.getElementById('frame');
+<!-- Rest van je originele body content hier -->
 
-             var container = document.getElementById('container');
-             var lastWindowHeight = window.innerHeight;
-             var lastWindowWidth = window.innerWidth;
-             var windowSizeChangeIntervalHandler = null;
-         
-             var resizeContainer = function () {
-                 var width = window.innerWidth;
-         
-                 // Take into account of the footer
-                 var height = window.innerHeight;
-         
-                 container.style.height = height + 'px';
-                 container.style.width = width + 'px';
-         
-                 iframe.style.height = height + 'px';
-                 iframe.style.width = width + 'px';
-         
-                 lastWindowHeight = window.innerHeight;
-                 lastWindowWidth = window.innerWidth;
-         
-                 // Work around when in landscape to work on iOS 12 otherwise
-                 // the content is under the URL bar at the top
-                 if (iosVersion && iosVersion[0] <= 12) {
-                     window.scrollTo(0, 0);
-                 }
-             };
-         
-             var reflow = function () {
-                 resizeContainer();
-                 // Poll for size changes as the window inner height can change after the resize event for iOS
-                 // Have one tab only, and rotate to portrait -> landscape -> portrait
-                 if (windowSizeChangeIntervalHandler === null) {
-                     windowSizeChangeIntervalHandler = setInterval(function () {
-                         if (lastWindowHeight !== window.innerHeight || lastWindowWidth !== window.innerWidth) {
-                             resizeContainer();
-                         }
-                     }, 100);
-         
-                     // Don't want to do this all the time so stop polling after some short time
-                     setTimeout(function() {
-                         if (!!windowSizeChangeIntervalHandler) {
-                             clearInterval(windowSizeChangeIntervalHandler);
-                             windowSizeChangeIntervalHandler = null;
-                         }
-                     }, 2000);
-                 }
-             };
-         
-             window.addEventListener('resize', reflow, false);
-             window.addEventListener('orientationchange', reflow, false);
-         
-             iframe.addEventListener('load', function () {
-                 reflow();
-             });
-         })();
-      </script>
-<script type="0d3849d41581c8d59dbb2306-text/javascript">
-      // Set the options globally
-      // to make LazyLoad self-initialize
-      window.lazyLoadOptions = {
-        // Your custom settings go here
-      };
-      
-      
-    </script>
-
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="0d3849d41581c8d59dbb2306-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"7edc50d46eb12ea9","version":"2023.7.0","r":1,"token":"a6719235021d455daa82d7f5531b5441","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
