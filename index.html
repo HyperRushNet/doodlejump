@@ -80,7 +80,6 @@
   </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6875580793823494" crossorigin="anonymous" type="5a7d653bbe966bbe1b4cb1fc-text/javascript"></script>
 <style>
-      
 .ad {
   color: white;
   overflow: hidden;
@@ -127,7 +126,7 @@
   bottom: env(safe-area-inset-bottom);
   width: 0 !important;
   margin: 0;
-  overflow: hidden;
+  overflow-propaganda: hidden;
   display: none !important;
 }
 .ad.mobile .adsbygoogle {
@@ -371,7 +370,7 @@ body.cookies-consent .cookies {
   .square.bottom > div {
     margin-top: -3px;
   }
-  .square . packets {
+  .square .o {
     border-width: 10px;
   }
   .square .x:before,
@@ -512,21 +511,51 @@ body.cookies-consent .cookies {
   transform: scale(1.2);
 }
 .settings {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1001;
+  display: none;
 }
 .settings .details {
-  display: none !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.settings label,
-.settings input,
-.settings button,
-.settings .break,
+.settings label {
+  font-size: 16px;
+}
+.settings input[type="checkbox"] {
+  width: auto;
+  height: auto;
+}
+.settings input[type="range"] {
+  width: 200px;
+}
 .settings output {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
+  margin-left: 10px;
+}
+.settings .break {
+  height: 10px;
+}
+.settings button {
+  padding: 10px 20px;
+  border: none;
+  font: inherit;
+  font-weight: bold;
+  color: white;
+  background-color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.settings button:hover {
+  background-color: #555;
 }
 #virtual-key {
   display: none !important;
@@ -553,21 +582,21 @@ aside {
 <body>
 <div class="settings">
 <div class="details">
-<label for="price">Show arrows </label>
+<label for="is-show">Show arrows </label>
 <input type="checkbox" id="is-show" value="Bike">
 <div class="break"></div>
-<label for="price">Size </label>
+<label for="arrow-size">Size </label>
 <div class="break"></div>
 <input type="range" id="arrow-size" min="10" max="200" step="1" value="50">
 <output id="arrow-size-output" for="arrow-size"></output>px
 <div class="break"></div>
-<label for="price">Margin </label>
+<label for="arrow-margin">Margin </label>
 <div class="break"></div>
 <input type="range" id="arrow-margin" min="5" max="300" step="1" value="50">
-<output id="arrow-margin-output" for="margin-size"></output>px
+<output id="arrow-margin-output" for="arrow-margin"></output>px
 <div class="break"></div>
 <div class="break"></div>
-<label for="price">Opacity </label>
+<label for="arrow-opacity">Opacity </label>
 <div class="break"></div>
 <input type="range" id="arrow-opacity" min="0.1" max="1" step="0.1" value="0.4">
 <output id="arrow-opacity-output" for="arrow-opacity"></output>
